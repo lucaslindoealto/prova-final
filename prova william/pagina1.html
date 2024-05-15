@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Foto</h2>
+            <img src="xiaomi.jpg" alt="Minha Foto">
+        </section>
+        <section>
+            <h2>Vídeo</h2>
+            <video controls>
+                <source src="video carro xiaomi.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section>
+            <h2>Áudio</h2>
+            <audio id="meuAudio" controls>
+                <source src="audio do carro.mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="playAudio()">Ouvir Áudio</button>
+        </section>
+        <section>
+            <h2>Texto</h2>
+            <p>Além de um alcance maior, a arquitetura elétrica de 800 volts com bateria de 101 kwh da versão Max, também permite uma velocidade de carregamento ultrarápida. Segundo a Xiaomi, ele pode recuperar 220 km de autonomia em 5 minutos e 510 km em 10 minutos. Há ainda uma terceira versão, que deverá ser lançada em 2025</p>
+        </section>
+        <section>
+            <h2>Botões e Links</h2>
+            <button type="button">Botão</button>
+            <a href="https://www.mi.com/br/"></a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("meuAudio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
